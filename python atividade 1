@@ -1,0 +1,5 @@
+nota1 = float(input("Qual a nota 1?(de 0 a 10): "))
+nota2 = float(input("qual a nota 2?(de 0 a 10): "))
+nota3 = float (input("qual a nota 3?(de 0 a 10):"))
+media = (nota1 + nota2 + nota3) / 3
+print("Sua media é: ", media)
