@@ -1,0 +1,2 @@
+nome = 8.4567
+print(f"A media das 3 notas é: {nome:.2f}!")
