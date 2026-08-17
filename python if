@@ -1,0 +1,10 @@
+nome = input("Digite seu nome: ")
+nota1 =  float(input("ecreva nota 1: "))
+nota2 = float(input("ecreva nota 2: "))
+nota3 = float(input("ecreva nota 3: "))
+
+media = (nota1 + nota2 + nota3) / 3
+if media <= 7:
+    print(f"Reprovado media: {media}")
+if media >= 7:
+    print(f"Aprovado media: {media}")
