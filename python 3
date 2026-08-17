@@ -1,0 +1,6 @@
+age = 23
+name = "isis"
+print(f"meu nome é {name} e eu tenho {age} ano(s) de idade")
+
+age, name = (23, 'isis')
+print(f"Meu nome é {name} e eu tenho {age} anos de idade")
