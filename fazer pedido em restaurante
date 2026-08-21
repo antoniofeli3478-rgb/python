@@ -1,0 +1,41 @@
+nome = input("Qual seu nome?: ")
+produto = input("O que gostaria de pedir?: ")
+quantidade = int(input("Digite a quantidade: "))
+preco = float(input("Qual o valor do produto?: "))
+distancia = float(input('Qual a distancia da entrega? (em km). Se retirada no local digite "0": '))
+resposta = input("É cliente fidelidade? digite sim ou não ")
+if resposta == "sim":
+    clientf = True
+else:
+    clientf = False
+subtotal = quantidade * preco
+if subtotal >= 100:
+    desconto = subtotal * 0.05
+else:
+    desconto = 0
+valor_com_desconto = subtotal - desconto
+if clientf:
+    desconto_fidelidade = valor_com_desconto * 0.05
+else:
+    desconto_fidelidade = 0
+valor_com_desconto = valor_com_desconto - desconto_fidelidade
+if distancia > 0:
+    taxa_entrega = distancia * 2.50
+else:
+    taxa_entrega = 0
+valor_final = valor_com_desconto + taxa_entrega
+if distancia > 0:
+    modalidade = "Entrega"
+else:
+    modalidade = "Retirada no restaurante"
+print("\n========== RESUMO DO PEDIDO ==========")
+print(f"Cliente: {nome}")
+print(f"Produto: {produto}")
+print(f"Quantidade: {quantidade}")
+print(f"Subtotal: R$ {subtotal:.2f}")
+print(f"Desconto principal: R$ {desconto:.2f}")
+print(f"Desconto fidelidade: R$ {desconto_fidelidade:.2f}")
+print(f"Taxa de entrega: R$ {taxa_entrega:.2f}")
+print(f"Valor final: R$ {valor_final:.2f}")
+print(f"Modalidade: {modalidade}")
+print("======================================")
