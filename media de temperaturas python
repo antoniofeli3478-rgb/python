@@ -1,0 +1,9 @@
+temp1 = int(input("Qual a temperatura?: "))
+temp2 = int(input("Qual a temperatura?: "))
+media = temp1 + temp2
+if media >= 30:
+    print(f"Quente pra um kralho, {media}!!?")
+elif media >= 20 and 29:
+    print(f"Suave, {media}")
+elif media <= 20:
+    print(f"Frio pra porra, {media}!!?")
